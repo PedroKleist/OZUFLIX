@@ -1,0 +1,117 @@
+:root{
+    --cinza: #c0c0c0;
+    --preta: hsl(0, 0%, 0%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    
+}
+
+
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--preta)
+}
+
+
+header .logo{
+    color: var(--cinza);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    margin-left: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    margin-right: 10px;
+}
+header nav a:hover{
+    color: var(--cinza);
+}
+
+a{
+    text-shadow:rgb(114, 114, 114) 0.1em 0.1em 0.2em
+
+}
+
+/*filme principal*/ 
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)100%), url(../img/tokyo-story-1200-1200-675-675-crop-000000.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-left: 1%; 
+    text-shadow: var(--preta) 0.1em 0.1em 0.2em
+}
+
+.titulo {
+    margin-top: 10%;
+    margin-left: 1%;
+    font-size: 40px;
+    color: var(--cinza);
+    text-shadow: var(--preta) 0.1em 0.1em 0.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    margin-left: 15px;
+    
+    padding: 15px 10px;
+    margin-right: 10px;
+    font-size: 12px;
+    border: rgba(0, 0, 0, 0.685) solid 1px;
+    
+}
+
+.botao:hover{
+    background: white;
+    color: black;
+    transition: 1.5s ease all;
+}
+
+.botao i{
+    margin-right: 10px;
+}
+.filme-principal .container{
+    width: 50%;
+    margin-left: 10px;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
